@@ -1,0 +1,67 @@
+.content li{
+    text-align:center;
+}
+
+.content ul{
+    list-style: none;
+    padding-left: 0;
+    padding-bottom:25px;
+    margin-bottom:0;
+}
+
+.content {
+    width:70%; 
+    margin:auto;
+    padding-bottom: 25px;
+}
+
+.content h1{
+    text-align: center;
+}
+
+.caption {
+    text-align: center;
+    width:70%;
+    margin:auto;
+    margin-bottom: 25px;
+    background-color:  #6E6658;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 20px;
+}
+
+.activityImage {
+    padding-top:20px;
+    margin-bottom: 10px;
+    width:50%;
+}
+
+form {
+    text-align: center;
+    background-color: #112D32;
+    color:white;
+    border-radius: 20px;
+}
+
+textarea {
+    width:70%;
+    height: 200px;
+    background-color:  #6E6658;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom:20px;
+}
+
+input{
+    background-color: #6E6658;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom:20px;
+    
+}
+
