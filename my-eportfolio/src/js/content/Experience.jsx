@@ -8,7 +8,7 @@ import java from '../../media/java.jpg';
 class Experience extends Component{
     render() {
         return (
-            <div>
+            <div class="pagecontent">
                 <h1>Work Experience</h1>
                 <form>
                     <img className="activityImage" src={DFIN}></img>

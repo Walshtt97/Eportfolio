@@ -4,7 +4,7 @@ import '../../css/Content.css';
 class AboutMe extends Component{
     render() {
         return (
-            <div>
+            <div class="pagecontent">
                 <h1>About Me</h1>
                 <p>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

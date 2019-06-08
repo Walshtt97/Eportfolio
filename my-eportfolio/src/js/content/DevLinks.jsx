@@ -4,7 +4,7 @@ import '../../css/Content.css';
 class DevLinks extends Component{
     render() {
         return (
-            <div>
+            <div class="pagecontent">
                 <h1>Links For Other Projects</h1>
                 <div>
                     <ul>

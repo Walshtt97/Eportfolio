@@ -10,7 +10,7 @@ import tough from '../../media/toughmudder.jpg';
 class Activities extends Component{
     render() {
         return (
-            <div>
+            <div class="pagecontent">
                 <h1>Activities</h1>
                 <form>
                     <img className="activityImage" src={rugby}></img>

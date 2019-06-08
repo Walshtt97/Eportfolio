@@ -10,13 +10,23 @@
 }
 
 .content {
-    width:70%; 
+    width:100%; 
     margin:auto;
     padding-bottom: 25px;
+    background-color: #88BDBC;
+    border-top-style: solid;
+    border-top-width: 30px;
+    border-top-color: #254E58;
+}
+
+.pagecontent {
+    margin: auto;
+    width: 70%;
 }
 
 .content h1{
     text-align: center;
+    color:black;
 }
 
 .caption {
@@ -24,44 +34,77 @@
     width:70%;
     margin:auto;
     margin-bottom: 25px;
-    background-color:  #6E6658;
+    background-color:  #254E58;
     color: white;
     padding: 12px 20px;
     border-radius: 20px;
+    border-style: solid;
+    border-width:3px;
+    border-color:white;
 }
 
 .activityImage {
-    padding-top:20px;
     margin-bottom: 10px;
-    width:50%;
+    width:70%;
 }
 
 form {
     text-align: center;
-    background-color: #112D32;
-    color:white;
-    border-radius: 20px;
+    background-color: #88BDBC;
+    color:#254E58;
+    
 }
+ 
 
 textarea {
     width:70%;
     height: 200px;
-    background-color:  #6E6658;
+    background-color:  #254E58;
     color: white;
     padding: 12px 20px;
     border-radius: 20px;
     cursor: pointer;
     margin-bottom:20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color:white;
+}
+
+textarea:hover{
+    background-color: white;
+    color:#254E58;
+    border-color:#254E58;
+}
+
+textarea:focus{
+    background-color: white;
+    color:#254E58;
+    border-color:#254E58;
 }
 
 input{
-    background-color: #6E6658;
+    background-color: #254E58;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     margin-bottom:20px;
-    
+    border-style: solid;
+    border-width: 3px;
+    border-color:white;
+    text-align: center;
+}
+
+input:hover{
+    background-color: white;
+    color:#254E58;
+    border-color:#254E58;
+}
+
+input:focus{
+    background-color: white;
+    color:#254E58;
+    border-color:#254E58;
 }
 
