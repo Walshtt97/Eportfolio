@@ -27,7 +27,7 @@ class AboutMe extends Component{
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Thank you for viewing my portfolio! I hope you enjoy learning 
                     more about my engagements and experiences. <b>Please Take a 
-                    look at some of my other web design work with the links below:
+                    look at some of my other web design work pn the  <a href="">projects page</a>.
                     </b>
                 </p>
             </div>
