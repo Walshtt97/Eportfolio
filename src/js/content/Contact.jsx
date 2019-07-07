@@ -22,30 +22,33 @@ class Contact extends Component{
         });
 
     };
+    clearValues(){
+        this.setState({name: '', email: '', message: ''});
+    }
      onSubmit = event => {
          event.preventDefault();
 
         const msg = {
-            to: 'myEmail',
+            to: '',
             from: this.state.email,
             subject: 'Tim I saw you E-portfolio',
             text: this.state.message,
             html: '<div style="text-align:center;font-size:22px">' +
             '<h2>You have received a new lead!</h2>' +
             '<ul style="text-align: left;font-size:16px">' +
-            '<li>First Name: ' + this.state.fName + '</li>' +
-            '<li>Last Name: ' + this.state.lName + '</li>' +
+            '<li>Name: ' + this.state.name + '</li>' +
             '<li>Mail Address: ' + this.state.email + '</li>' +
             '</ul></div>'
         };
+        //TODO: scan for html in name and email
         sgMail.send(msg);
+        this.clearValues();
     }
 
     render() {
         return (
             <div class="pagecontent">
                 <h1>Contact Form</h1>
-                <h1>This page is not yet working please if you would like to contact me please email walshtt@mail.uc.edu</h1>
                 <form>
                     <label>
                         Name: <br/>
