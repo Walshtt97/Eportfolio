@@ -8,7 +8,7 @@ class AboutMe extends Component{
                 <h1>About Me</h1>
                 <p>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Welcome to my E-Portfolio! I am a fourth year at the University 
+                    Welcome to my E-Portfolio! I am in my last year at the University 
                     of Cincinnati (UC). I am currently seeking a Bachelors of 
                     Engineering in Computer Science and a Minor in Mathematics. 
                     I plan to graduate in the spring of 2020. Through my Cooperative 
@@ -27,7 +27,7 @@ class AboutMe extends Component{
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Thank you for viewing my portfolio! I hope you enjoy learning 
                     more about my engagements and experiences. <b>Please Take a 
-                    look at some of my other web design work pn the  <a href="">projects page</a>.
+                    look at some of my other web design work on the projects page.
                     </b>
                 </p>
             </div>
