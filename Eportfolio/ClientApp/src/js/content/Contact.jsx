@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import Axios from 'axios';
 
-const sgMail = require('@sendgrid/mail');
 class Contact extends Component{
     constructor(props) {
         super(props);
@@ -9,8 +9,7 @@ class Contact extends Component{
             email: '',
             message: ''
         }
-        const SENDGRID_API_KEY = "";
-        sgMail.setApiKey(SENDGRID_API_KEY);
+        
 
         this.changeValue = this.changeValue.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
@@ -28,20 +27,20 @@ class Contact extends Component{
      onSubmit = event => {
          event.preventDefault();
 
-        const msg = {
-            to: '',
-            from: this.state.email,
-            subject: 'Tim I saw you E-portfolio',
-            text: this.state.message,
-            html: '<div style="text-align:center;font-size:22px">' +
-            '<h2>You have received a new lead!</h2>' +
-            '<ul style="text-align: left;font-size:16px">' +
-            '<li>Name: ' + this.state.name + '</li>' +
-            '<li>Mail Address: ' + this.state.email + '</li>' +
-            '</ul></div>'
-        };
-        //TODO: scan for html in name and email
-        sgMail.send(msg);
+         
+        
+         var data = JSON.stringify({
+             "name": this.state.name,
+             "email": this.state.email,
+             "message": this.state.message
+         });
+         let url = 'api/Email/SendEmail';
+         Axios.post(url, data, {
+             headers: { 'Content-Type': 'application/json' }
+         }).catch(err => {
+             console.log(err)
+         });
+        //console.log(body);
         this.clearValues();
     }
 
