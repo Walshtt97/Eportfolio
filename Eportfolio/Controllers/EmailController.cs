@@ -84,7 +84,7 @@ namespace Eportfolio.Controllers
         public void sendEmailToContacter(ContactFormData contact)
         {
             var from = new EmailAddress("TimWalsh@NoReply.com", "Tim Walsh");
-            var subject = $"Message recieved - Thank You {contact.Name}!";
+            var subject = $"Message received - Thank You {contact.Name}!";
             var to = new EmailAddress(contact.EmailAddress, contact.Name);
             var plainTextContent = contact.Message;
             //TODO: decide on formatting

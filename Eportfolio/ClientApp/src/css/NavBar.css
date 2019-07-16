@@ -7,10 +7,9 @@
 .navbar li.nav-link{
     background-color:#254E58;
     display:inline-block;
+    width:10%;
     padding-top: 25px; 
     padding-bottom:25px;
-    padding-right: 2.5%;
-    padding-left: 2.5%;
     border-radius: 50px;
     border-style: solid;
     border-width: 3px;
