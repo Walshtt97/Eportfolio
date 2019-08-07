@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import logo from '../media/me.png';
+import header from '../media/Eportfolio Header.png'
 import '../css/Header.css';
+
 class Header extends Component{
 render(){
     return (
         <div className="header">
-            <h1>Timothy Walsh</h1>
-            <img className="headerImg" src={logo}></img>
+            <img className="headerImg" src={header}></img>
         </div> 
     );
     };

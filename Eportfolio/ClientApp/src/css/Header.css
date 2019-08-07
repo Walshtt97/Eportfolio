@@ -1,18 +1,6 @@
 h1 {
     text-align: center;
-    margin-top:0;
-}
-
-img {
-    display:block;
-    margin-left:auto;
-    margin-right:auto; 
-    margin-bottom:0;
-    padding-bottom:0;
-    border-width: 3px;
-    border-style: solid;
-    border-color: white;
-    border-radius: 50px;
+    margin-top: 0;
 }
 
 .header {
@@ -21,5 +9,13 @@ img {
 }
 
 .headerImg {
-    width:20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
 }

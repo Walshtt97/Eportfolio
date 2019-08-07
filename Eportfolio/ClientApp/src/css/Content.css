@@ -1,19 +1,19 @@
-.content li{
-    text-align:center;
+.content li {
+    text-align: center;
 }
 
-.content ul{
+.content ul {
     list-style: none;
     padding-left: 0;
-    padding-bottom:25px;
-    margin-bottom:0;
+    padding-bottom: 25px;
+    margin-bottom: 0;
 }
 
 .content {
-    width:100%; 
-    margin:auto;
+    width: 100%;
+    margin: auto;
     padding-bottom: 25px;
-    background-color: #88BDBC;
+    background-color: white;
 }
 
 .pagecontent {
@@ -21,87 +21,94 @@
     width: 70%;
 }
 
-.content h1{
+.content h1 {
     text-align: center;
-    color:black;
+    color: black;
 }
 
 .caption {
     text-align: center;
-    width:70%;
-    margin:auto;
+    width: 70%;
+    margin: auto;
     margin-bottom: 25px;
-    background-color:  #254E58;
+    background-color: #0C82DF;
     color: white;
     padding: 12px 20px;
     border-radius: 20px;
     border-style: solid;
-    border-width:3px;
-    border-color:white;
+    border-width: 3px;
+    border-color: white;
 }
 
 .activityImage {
     margin-bottom: 10px;
-    width:70%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    width: 70%;
+    box-shadow: 0px 10px 100px grey;
 }
 
 form {
     text-align: center;
-    background-color: #88BDBC;
-    color:#254E58;
-    
+    background-color: white;
+    color: black;
 }
- 
+
+form ::placeholder {
+    color: white;
+}
+
+form:hover ::placeholder {
+    color: black;
+}
+
+form:focus ::placeholder {
+    color: black;
+}
 
 textarea {
-    width:70%;
+    width: 70%;
     height: 200px;
-    background-color:  #254E58;
+    background-color: #0C82DF;
     color: white;
     padding: 12px 20px;
     border-radius: 20px;
     cursor: pointer;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     border-style: solid;
     border-width: 3px;
-    border-color:white;
+    border-color: white;
 }
 
-textarea:hover{
-    background-color: white;
-    color:#254E58;
-    border-color:#254E58;
+textarea:hover {
+    background-color: #F42C2C;
+    color: white;
+    border-color: black;
 }
 
-textarea:focus{
-    background-color: white;
-    color:#254E58;
-    border-color:#254E58;
+textarea:focus {
+    background-color: #F42C2C;
+    color: White;
+    border-color: black;
 }
 
-input{
-    background-color: #254E58;
+input {
+    background-color: #0C82DF;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     border-style: solid;
     border-width: 3px;
-    border-color:white;
+    border-color: white;
     text-align: center;
 }
 
-input:hover{
-    background-color: white;
-    color:#254E58;
-    border-color:#254E58;
+input:hover {
+    background-color: #F42C2C;
+    color: black;
+    border-color: black;
 }
-
-input:focus{
-    background-color: white;
-    color:#254E58;
-    border-color:#254E58;
-}
-

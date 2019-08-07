@@ -4,6 +4,8 @@ import '../css/NavBar.css';
 import Page from './page.jsx'
 import logo from '../media/me.png';
 
+
+
 class NavBar extends Component{
     constructor(params){
         super(params);
@@ -27,7 +29,7 @@ class NavBar extends Component{
                         {({
                            style 
                         })=>(
-                        <div className="navbar" style = {style}>
+                        <div className="navbar" style={style}>
                             <ul>
                                 <li className="nav-link" onClick={this.navClick} id="Resume">Resume</li>
                                 <li className="nav-link" onClick={this.navClick} id="Activities">Activities</li>
@@ -35,8 +37,8 @@ class NavBar extends Component{
                                 <li className="nav-link" onClick={this.navClick} id="Experience">Experience</li>
                                 <li className="nav-link" onClick={this.navClick} id="Contact">Contact</li>
                                 <li className="nav-link" onClick={this.navClick} id="DevLinks">Projects</li>
-                                <li ><img className="nav-img" src={logo}></img></li>
                             </ul>
+                            <div className="nav-border"/>
                         </div>
                         )}
                     </Sticky>

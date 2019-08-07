@@ -8,7 +8,9 @@ class Resume extends Component{
             <div class="pagecontent">
             <h1>Resume</h1>
             <ul><li><a href={resume} download>Download</a></li></ul>
+            <form>
             <img className="activityImage" src={resumeImg}></img> 
+            </form>
             </div>
         );
     };
