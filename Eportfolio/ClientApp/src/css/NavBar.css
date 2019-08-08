@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-.navbar li.nav-link {
+.navbar li.nav-button {
     background-color: white;
     display: inline-block;
     width: 10%;
@@ -19,7 +19,7 @@
     color: black;
 }
 
-.navbar li.nav-link:hover {
+.navbar li.nav-button:hover {
     background-color: #F42C2C;
     border-width: 2px;
     border-style: solid;
@@ -35,6 +35,11 @@
 .navbar .nav-border {
     background-color: black;
     height: 2px;
+}
+
+a.nav-link {
+    text-decoration: none;
+    color: black;
 }
 
 .navbar {

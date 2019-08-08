@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/0f5e5b7b-ec3f-4375-8b05-be737efb4cd5/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/tim-walsh-eportfolio",
+    "appService.deploySubpath": ""
+}

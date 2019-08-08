@@ -1,65 +1,62 @@
 import React, { Component } from 'react';
 import { StickyContainer, Sticky } from 'react-sticky';
 import '../css/NavBar.css';
-import Page from './page.jsx'
 import logo from '../media/me.png';
+import { NavLink } from 'react-router-dom';
+import Page from './page'
 
 
-
-class NavBar extends Component{
-    constructor(params){
+class NavBar extends Component {
+    constructor(params) {
         super(params);
-        this.state= {
-            value:params.value
+        this.state = {
+            value: params.value
         }
-        
-    }
-    
 
-    navClick = (e) =>{
-        this.setState({value:e.target.id});
     }
 
 
-    render(){
+    navClick = (e) => {
+    }
+
+
+    render() {
         return (
             <div >
                 <StickyContainer>
                     <Sticky>
                         {({
-                           style 
-                        })=>(
-                        <div className="navbar" style={style}>
-                            <ul>
-                                <li className="nav-link" onClick={this.navClick} id="Resume">Resume</li>
-                                <li className="nav-link" onClick={this.navClick} id="Activities">Activities</li>
-                                <li className="nav-link" onClick={this.navClick} id="AboutMe">About Me</li>
-                                <li className="nav-link" onClick={this.navClick} id="Experience">Experience</li>
-                                <li className="nav-link" onClick={this.navClick} id="Contact">Contact</li>
-                                <li className="nav-link" onClick={this.navClick} id="DevLinks">Projects</li>
-                            </ul>
-                            <div className="nav-border"/>
-                        </div>
-                        )}
+                            style
+                        }) => (
+                                <div className="navbar" style={style}>
+                                    <ul>
+                                        <li className="nav-button"><a className="nav-link" href="/Resume">Resume</a></li>
+                                        <li className="nav-button"><a className="nav-link" href="/Activities">Activities</a></li>
+                                        <li className="nav-button"><a className="nav-link" href="/">About Me</a></li>
+                                        <li className="nav-button"><a className="nav-link" href="/Experience">Experience</a></li>
+                                        <li className="nav-button"><a className="nav-link" href="/Contact">Contact</a></li>
+                                        <li className="nav-button"><a className="nav-link" href="/Projects">Projects</a></li>
+                                    </ul>
+                                    <div className="nav-border" />
+                                </div>
+                            )}
                     </Sticky>
-                    <Page page={this.state.value}></Page>
-                
                 </StickyContainer>
             </div>
         );
     };
 
-  /*   sticktothetop() {
-        var window_top = $(window).scrollTop();
-        var top = $('navbar').offset().top;
-        if (window_top > top) {
-            $('#stick-here').addClass('stick');
-            $('#stick-here').height($('#navbar').outerHeight());
-        } else {
-            $('#stickThis').removeClass('stick');
-            $('#stick-here').height(0);
-        }
-    }*/
+    /*   sticktothetop() {
+          var window_top = $(window).scrollTop();
+          var top = $('navbar').offset().top;
+          if (window_top > top) {
+              $('#stick-here').addClass('stick');
+              $('#stick-here').height($('#navbar').outerHeight());
+          } else {
+              $('#stickThis').removeClass('stick');
+              $('#stick-here').height(0);
+          }
+      }*/
 }
 
 

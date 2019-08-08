@@ -93,6 +93,14 @@ textarea:focus {
     border-color: black;
 }
 
+a.resumeLink {
+    display: block;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
 input {
     background-color: #0C82DF;
     color: white;
