@@ -46,7 +46,7 @@ class Contact extends Component{
 
     render() {
         return (
-            <div class="pagecontent">
+            <div className="pagecontent">
                 <h1>Contact Form</h1>
                 <form>
                     <label>

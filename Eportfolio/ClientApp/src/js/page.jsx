@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../css/Content.css';
 import AboutMe from './content/AboutMe.jsx';
 import Activities from './content/Activities.jsx';

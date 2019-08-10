@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import header from '../media/Eportfolio Header.png'
 import '../css/Header.css';
+import header from '../media/header.png'
 
 class Header extends Component{
 render(){

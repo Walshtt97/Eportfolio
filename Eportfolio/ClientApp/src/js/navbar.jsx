@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { StickyContainer, Sticky } from 'react-sticky';
 import '../css/NavBar.css';
-import logo from '../media/me.png';
-import { NavLink } from 'react-router-dom';
 import Page from './page'
 
 
@@ -16,10 +14,6 @@ class NavBar extends Component {
     }
 
 
-    navClick = (e) => {
-    }
-
-
     render() {
         return (
             <div >
@@ -29,18 +23,20 @@ class NavBar extends Component {
                             style
                         }) => (
                                 <div className="navbar" style={style}>
-                                    <ul>
-                                        <li className="nav-button"><a className="nav-link" href="/Resume">Resume</a></li>
-                                        <li className="nav-button"><a className="nav-link" href="/Activities">Activities</a></li>
-                                        <li className="nav-button"><a className="nav-link" href="/">About Me</a></li>
-                                        <li className="nav-button"><a className="nav-link" href="/Experience">Experience</a></li>
-                                        <li className="nav-button"><a className="nav-link" href="/Contact">Contact</a></li>
-                                        <li className="nav-button"><a className="nav-link" href="/Projects">Projects</a></li>
-                                    </ul>
+                                    <div className="ul">
+                                        <a className="nav-link" href="/Resume">Resume</a>
+                                        <a className="nav-link" href="/Activities">Activities</a>
+                                        <a className="nav-link" href="/">About Me</a>
+                                        <a className="nav-link" href="/Experience">Experience</a>
+                                        <a className="nav-link" href="/Contact">Contact</a>
+                                        <a className="nav-link" href="/Projects">Projects</a>
+                                    </div>
                                     <div className="nav-border" />
                                 </div>
                             )}
                     </Sticky>
+
+                    <Page />
                 </StickyContainer>
             </div>
         );

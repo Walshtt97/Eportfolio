@@ -8,7 +8,7 @@ import technologies from '../../media/technologies.png';
 class Experience extends Component{
     render() {
         return (
-            <div class="pagecontent">
+            <div className="pagecontent">
                 <h1>Work Experience</h1>
                 <form>
                     <img className="activityImage" src={DFIN}></img>
